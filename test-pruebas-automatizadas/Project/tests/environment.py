@@ -22,7 +22,7 @@ def before_all(context):
 
 def before_scenario(context, scenario):
     try:
-        grid_url = 'http://selenium-hub:4444/wd/hub'
+        grid_url = 'http://localhost:4444/wd/hub'
         browser = os.getenv("BROWSER", "chrome").lower()
 
         if browser == 'chrome':
