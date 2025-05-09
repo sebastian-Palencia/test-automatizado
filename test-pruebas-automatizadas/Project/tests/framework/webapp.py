@@ -1,11 +1,11 @@
 from data.config import settings 
-from pages.login_page import LoginPage 
+
 
 class WebApp:
 
     def __init__(self, driver):
         self.driver = driver
-        self.login_page = LoginPage(self.driver)
+
     
     def get_driver(self):
         return self.driver

@@ -4,7 +4,7 @@ import json
 settings = None
 
 #Load environment test automations
-def load_settings(settings_env="environment.json"):
+def load_settings(settings_env="environment_t.json"):
     global settings
     try:
         path_settings = os.path.join(os.path.dirname(os.path.abspath(__file__)), settings_env.strip('"'))
