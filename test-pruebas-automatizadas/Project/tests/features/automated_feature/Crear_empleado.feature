@@ -17,7 +17,7 @@ Scenario: Logueo y creacion de empleado
     When Registrare el id del empleado "0416"
     When Creo el nuevo usuario del empleado "srfeliche"
     When Creo el contraseña "Sfeliche47*" al empleado
-    When Confirmo la creacion del contraseña"Sfeliche47*"
+    When Confirmo la creacion del contraseña "Sfeliche47*"
     When Le doy click al boton "Save" para guardar los datos del empleado
     When Valido la creacion de usuario con una card al lado que dice succesfull
 

@@ -16,7 +16,7 @@ def step_impl(context,user):
 
 @when(u'Ingreso la contraseña "{contraseña}"')
 def step_impl(context,contraseña):
-    context.orange.contraseña(contraseña.strip('"'))
+    context.orange.password(contraseña.strip('"'))
 
 
 
@@ -72,12 +72,12 @@ def step_impl(context,text):
 
 @when(u'Creo el contraseña "{text}" al empleado')
 def step_impl(context,text):
-    context.orange.inputform(text.strip('"'),"(//input[@type='contraseña'])[1]")
+    context.orange.inputform(text.strip('"'),"(//input[@type='password'])[1]")
 
 
-@when(u'Confirmo la creacion del Pasword "{text}"')
+@when(u'Confirmo la creacion del contraseña "{text}"')
 def step_impl(context,text):
-    context.orange.inputform(text.strip('"'),"(//input[@type='contraseña'])[2]")
+    context.orange.inputform(text.strip('"'),"(//input[@type='password'])[2]")
 
 
 @when(u'Le doy click al boton "Save" para guardar los datos del empleado')

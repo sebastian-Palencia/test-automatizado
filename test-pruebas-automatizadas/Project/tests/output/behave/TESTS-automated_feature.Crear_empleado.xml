@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="15.746128559112549" tests='1' skipped='0'
+name="Automated_Featurecrear_Empleado" failures='0' errors='0'><testcase time="15.746128559112549" name="Logueo_Y_Creacion_De_Empleado" status="passed"
+         classname="Registro_De_Empleado_Orange_Hrm" >
+            <system-out>
+            <![CDATA[
+            @scenario.begin
+                @Orangehrm   @registro_1
+                scenario: Logueo y creacion de empleado
+e                given Me logueo en la plataforma ... passed in 1.573s 
+                when Ingreso el usuario "Admin" ... passed in 1.256s 
+                when Ingreso la contraseña "admin123" ... passed in 1.161s 
+                when Le doy click al boton de login ... passed in 1.101s 
+                when Ingreso al portal de orange HRM ... passed in 0.6412s 
+                when Le doy click en el menu lateral izquierdo la opcion PIM ... passed in 0.5769s 
+                when Le doy click a el boton de agregar nuevo empleado ... passed in 0.7188s 
+                when Le doy click en "Create login details button" ... passed in 0.4811s 
+                when Voy a registrar el nombre del empleado "Sebastian" ... passed in 1.182s 
+                when Voy a registrar segundo nombre de el empleado "Felipe" ... passed in 1.19s 
+                when Registrare el apellido "Palencia" del empleado ... passed in 1.153s 
+                when Registrare el id del empleado "0416" ... passed in 1.136s 
+                when Creo el nuevo usuario del empleado "srfeliche" ... passed in 1.145s 
+                when Creo el contraseña "Sfeliche47*" al empleado ... passed in 1.158s 
+                when Confirmo la creacion del contraseña "Sfeliche47*" ... passed in 1.161s 
+                when Le doy click al boton "Save" para guardar los datos del empleado ... passed in 0.1122s 
+                when Valido la creacion de usuario con una card al lado que dice succesfull ... passed in 0.0001719s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

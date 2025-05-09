@@ -35,7 +35,7 @@ class login:
 
     def validaciondeportaldeorange(self):
         try:
-            time.sleep(10)
+
             self.global_function.element_present("xpath","//div[@class='orangehrm-attendance-card-profile-image']//img[@alt='profile picture']")
             return True
         except TimeoutException as e:
@@ -72,6 +72,13 @@ class login:
     def clicksavebutton(self):
         try:
             self.global_function.click("xpath","//button[normalize-space()='Save']")
+            return True
+        except TimeoutException as e:
+            raise e
+        
+    def validacionsuccesfull(self):
+        try:
+            self.global_function.element_present("xpath","//div[@class='orangehrm-attendance-card-profile-image']//img[@alt='profile picture']")
             return True
         except TimeoutException as e:
             raise e

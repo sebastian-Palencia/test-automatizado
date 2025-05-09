@@ -1,0 +1,62 @@
+
+************************************************************
+Running parallel scenarios
+************************************************************
+
+POST http://selenium-hub:4444/wd/hub/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:loggingPrefs": {"browser": "ALL"}, "goog:chromeOptions": {"extensions": [], "args": ["--disable-gpu"]}}}}
+Starting new HTTP connection (1): selenium-hub:4444
+http://selenium-hub:4444 "POST /wd/hub/session HTTP/1.1" 200 1559
+Remote response: status=200 | data={
+  "value": {
+    "sessionId": "f4b2250b1c2e466512135cf29f34e8e4",
+    "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "113.0.5672.63",
+      "chrome": {
+        "chromedriverVersion": "113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs\u002fbranch-heads\u002f5672@{#912})",
+        "userDataDir": "\u002ftmp\u002f.com.google.Chrome.mdWq9H"
+      },
+      "goog:chromeOptions": {
+        "debuggerAddress": "localhost:41969"
+      },
+      "goog:loggingPrefs": {
+        "browser": "ALL"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "linux",
+      "proxy": {
+      },
+      "se:bidiEnabled": false,
+      "se:cdp": "ws:\u002f\u002f172.18.0.4:4444\u002fsession\u002ff4b2250b1c2e466512135cf29f34e8e4\u002fse\u002fcdp",
+      "se:cdpVersion": "113.0.5672.63",
+      "se:vnc": "ws:\u002f\u002f172.18.0.4:4444\u002fsession\u002ff4b2250b1c2e466512135cf29f34e8e4\u002fse\u002fvnc",
+      "se:vncEnabled": true,
+      "se:vncLocalAddress": "ws:\u002f\u002f172.18.0.4:7900",
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+        "implicit": 0,
+        "pageLoad": 300000,
+        "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+    }
+  }
+} | headers=HTTPHeaderDict({'content-length': '1559', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json; charset=utf-8'})
+Finished Request
+POST http://selenium-hub:4444/wd/hub/session/f4b2250b1c2e466512135cf29f34e8e4/timeouts {"implicit": 10000}
+http://selenium-hub:4444 "POST /wd/hub/session/f4b2250b1c2e466512135cf29f34e8e4/timeouts HTTP/1.1" 200 14
+Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+POST http://selenium-hub:4444/wd/hub/session/f4b2250b1c2e466512135cf29f34e8e4/timeouts {"script": 30000}
+http://selenium-hub:4444 "POST /wd/hub/session/f4b2250b1c2e466512135cf29f34e8e4/timeouts HTTP/1.1" 200 14
+Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-length': '14', 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+Finalizando escenario: Logueo y creacion de empleado
